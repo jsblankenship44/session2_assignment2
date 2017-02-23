@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forms</title>
+</head>
+
+<body>
+	<hr size=44 width=100% align="left" color="#000000"/>
+    
+		<!-- training using fieldset, legend and form tags  -->
+	
+<form action="http://www.example.com/review.php" method="get">
+    
+		<fieldset>
+			<legend>Your Details:</legend>
+       <!-- was having difficulty having the label input type box aligning with each other, took out a character after name: to align, surely there is a better way? -->
+				<label>Name: 
+				  <input type="text" name="name" size="30" maxlength="100"></label><br />
+				<label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
+		</fieldset><br />
+	
+		<fieldset>
+  <legend>Your Review:</legend>
+            <label>
+            <p>How did you hear about us? 
+              <select> 
+                <!--drop down menu for selection-->
+                <option value="Google">Google</option>
+                <option value="Bing">Bing</option>
+                <option value="NewsPaper">News Paper</option>
+                <option value="TV">TV</option>
+              </select>
+            </p>
+            <p>Would you visit again?</p>
+            <p><input name="Yes" type="radio" value="Yes" />Yes
+               <input name="No" type="radio" value="No" />No
+               <input name="Maybe" type="radio" value="Maybe" />Maybe</p>
+               
+               <p>Comments:</p> <!-- comments field -->
+               		<p><textarea rows="5" cols="50">
+                    		</textarea></p>
+             
+             <p><input name="checkbox" type="checkbox" value="signup" checked />Sign me up for email updates</p>
+             
+             <p><input name="Submit Review" type="button" value="Submit Review" /></p>
+            
+            </label>
+        </fieldset>
+	</form>   
+</body>
+</html>
